@@ -33,11 +33,14 @@ Package.onUse(function (api) {
     'source/iptc/config.coffee',
     // Image Variant
     'source/image/image-variant.coffee',
+    // Picture
+    'source/picture/picture.coffee',
   ]);
 
   api.export('Exif');
   api.export('IPTC');
   api.export('ImageVariant');
+  api.export('Picture');
 });
 
 
@@ -60,5 +63,6 @@ Package.onTest(function(api) {
     'tests/exif.unit.coffee',
     'tests/iptc.unit.coffee',
     'tests/image-variant.unit.coffee',
+    'tests/picture.unit.coffee'
   ]);
 });

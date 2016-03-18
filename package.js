@@ -25,9 +25,16 @@ Package.onUse(function (api) {
     'source/exif/processors/remove-exif-prefix-from-fields.coffee',
     'source/exif/exif-tags.coffee',
     'source/exif/config.coffee',
+    // IPTC
+    'source/iptc/iptc.coffee',
+    'source/iptc/processor.coffee',
+    'source/iptc/iptc-schema.coffee',
+    'source/iptc/processors/imagemagick.coffee',
+    'source/iptc/config.coffee',
   ]);
 
   api.export('Exif');
+  api.export('IPTC');
 });
 
 
@@ -48,5 +55,6 @@ Package.onTest(function(api) {
 
   api.addFiles([
     'tests/exif.unit.coffee',
+    'tests/iptc.unit.coffee',
   ]);
 });

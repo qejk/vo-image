@@ -1,4 +1,4 @@
-class Exif.RemoveEfixPrefixFromFieldsProcessor extends Exif.Processor
+class Exif.RemoveExifPrefixFromFieldsProcessor extends Exif.Processor
 
   process: (data) ->
     cleanedDataFromPrefixed = {}

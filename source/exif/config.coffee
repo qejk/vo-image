@@ -1,6 +1,6 @@
 Exif.registerProcessor(
-  'Exif.RemoveEfixPrefixFromFieldsProcessor',
-  new Exif.RemoveEfixPrefixFromFieldsProcessor
+  'Exif.RemoveExifPrefixFromFieldsProcessor',
+  new Exif.RemoveExifPrefixFromFieldsProcessor
 )
 Exif.registerProcessor(
   'Exif.DateProcessor',

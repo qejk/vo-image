@@ -18,7 +18,16 @@ Package.onUse(function (api) {
   ]);
 
   api.addFiles([
+    // Exif
+    'source/exif/exif.coffee',
+    'source/exif/processor.coffee',
+    'source/exif/processors/date.coffee',
+    'source/exif/processors/remove-exif-prefix-from-fields.coffee',
+    'source/exif/exif-tags.coffee',
+    'source/exif/config.coffee',
   ]);
+
+  api.export('Exif');
 });
 
 
@@ -38,5 +47,6 @@ Package.onTest(function(api) {
   ]);
 
   api.addFiles([
+    'tests/exif.unit.coffee',
   ]);
 });
